@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Создать форму</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/add_post.css'%}" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <div class ="add-post" style="position:absolute; top: 170px; left: 700px">
+            <h2>Создать форму</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.title.label_tag }}{{ form.title }}
+                    <br>
+                    {{ form.court.label_tag }}{{ form.court }}
+                    <br>
+                    {{ form.training_date.label_tag }}{{ form.training_date }}
+                    <br>
+                    {{ form.training_time.label_tag }}{{ form.training_time }}
+                    <br>
+                    {{ form.preferences.label_tag }}{{ form.preferences }}
+                    <br>
+                    <div class = "form-buttons">
+                        <input type="submit" value="Добавить" class ="button" style = "left:30px;" />
+                      </div>
+                </form>
+
+                <!-- Кнопка "Назад" -->
+                <a href="{% url 'find_partner' %}" class="back">
+                    <img class="mx-1" src="https://cdn-icons-png.flaticon.com/512/2223/2223615.png"  width="32" height="32">
+                    Назад
+                </a>
+</body>
+</html>
+{% endblock content %}
+
