@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+    overflow: auto; 
+    width: 100%;
+	background-color: white;
+}
+
+#page {
+    clear:both;
+    width: 90%;
+}
+
+.h1 {
+    position: relative;
+    color: black !important;
+    overflow: visible;
+    text-align: center;
+}
+
+#top-container{
+    width: 20%;
+    float: left;
+    position: relative;
+	align-items: center;
+}
+
+#top-container img{ 
+    display: inline-block;
+    position: relative;
+	border-radius: 10px;
+	border: 2px solid #e3f0e9;
+    text-align: center;
+}
+
+#top-container p{ 
+	font-weight: medium;
+	color: #272727;
+}
+
+#top-container a {
+    position: absolute;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ads {
+    margin-top: 20px; /* отделение контейнеров */
+    border-radius: 33px;
+	padding: 2rem !important; 
+    font-family: Montserrat;
+    word-break: break-all;
+    opacity: 0;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    min-width: 65%;
+    max-width: 65%;
+    width: 65%;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0px 6px 50px rgba(168,228,160);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    animation-name: fadeForm;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.ads-border {
+    flex-flow: column nowrap;
+    float:right;
+    width: 65%;
+}
+@keyframes fadeForm{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h3 {
+    color: black;
+}
+
+@media (min-width: 1450px){
+    .h1 {
+        transform: translate(0, 7vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw, 10vw);
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    #top-container p{ 
+        font-size: 25px;
+        transform: translate(3vw , 13vw);
+        white-space: nowrap; /* в одну строчку */
+    }
+
+    #top-container a {
+        white-space: nowrap; /* в одну строчку */
+        font-size: 25px;
+        transform: translate(3vw , 13vw);
+    }
+
+    h3 {
+        transform: translate(0%, 8vw);
+    }
+
+    .ads {
+        transform: translate(0%, 8vw);
+    }
+}
+
+@media (min-width: 1325px) and (max-width:1449px) {
+    .h1 {
+        transform: translate(0%, 10vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw, 15vw);
+        width: 200px;
+    }
+
+    #top-container p{ 
+        font-size: 25px;
+        transform: translate(3vw , 18vw);
+        white-space: nowrap; /* в одну строчку */
+    }
+
+    #top-container a {
+        white-space: nowrap; /* в одну строчку */
+        font-size: 25px;
+        transform: translate(3vw , 18vw);
+    }
+
+    h3 {
+        transform: translate(0%, 8vw);
+    }
+
+    .ads {
+        transform: translate(0%, 8vw);
+    }
+}
+
+@media (min-width:1170px) and (max-width:1324px) {
+    .h1 {
+        transform: translate(0%, 12vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw, 18vw);
+        width: 200px;
+    }
+
+    #top-container p{ 
+        font-size: 25px;
+        transform: translate(3vw , 21vw);
+        white-space: nowrap; 
+    }
+
+    #top-container a {
+        white-space: nowrap; 
+        font-size: 25px;
+        transform: translate(3vw , 21vw);
+    }
+
+    h3 {
+        transform: translate(0%, 12vw);
+    }
+
+    .ads {
+        transform: translate(0%, 12vw);
+    }
+}
+
+@media (min-width:992px) and (max-width:1169px) {
+    .h1 {
+        transform: translate(0%, 13vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw , 21vw);
+        width: 200px;
+    }
+
+    #top-container p{ 
+        font-size: 25px;
+        transform: translate(3vw , 24vw);
+        white-space: nowrap; 
+    }
+
+    #top-container a {
+        white-space: nowrap; 
+        font-size: 25px;
+        transform: translate(3vw , 24vw);
+    }
+
+    h3 {
+        transform: translate(0%, 15vw);
+    }
+
+    .ads {
+        transform: translate(0%, 15vw);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .h1 {
+        transform: translate(0%, 15vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw , 24vw);
+        width: 150px;
+    }
+
+    #top-container p{ 
+        font-size: 20px;
+        transform: translate(3vw , 27vw);
+    }
+
+    #top-container a {
+        font-size: 20px;
+        transform: translate(3vw , 27vw);
+    }
+
+    h3 {
+        transform: translate(0%, 20vw);
+    }
+
+    .ads {
+        transform: translate(0%, 20vw);
+    }
+}
+
+@media (max-width: 767px){
+    .h1 {
+        transform: translate(0%, 28vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw , 27vw);
+        width: 100px;
+    }
+
+    #top-container p{ 
+        font-size: 18px;
+        transform: translate(3vw , 30vw);
+    }
+
+    #top-container a {
+        font-size: 18px;
+        transform: translate(3vw , 30vw);
+    }
+
+    h3 {
+        transform: translate(0%, 28vw);
+    }
+
+    .ads {
+        transform: translate(0%, 28vw);
+    }
+}
+ 
+@media (max-width: 480px) {
+    .h1 {
+        transform: translate(3vw , 30vw);
+    }
+
+    #top-container img{ 
+        transform: translate(3vw , 33vw);
+        width: 50px;
+    }
+
+    #top-container p{ 
+        font-size: 16px;
+        transform: translate(3vw , 33vw);
+    }
+
+    #top-container a {
+        font-size: 16px;
+        transform: translate(-17%, 13vw);
+    }
+
+    h3 {
+        transform: translate(0%, 31vw);
+    }
+
+    .ads {
+        transform: translate(0%, 31vw);
+    }
+}
